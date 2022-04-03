@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http:\\www.thymeleaf.org" >
+<head th:replace ="fragments :: page_head('verification failed!','none')">
+
+<body>
+<div class="container-fluid">
+  <div  th:replace = "navigation :: header_menu"></div>
+  <div>&nbps;</div>
+  <div class ="text-center">
+      <h2>Customer Verification</h2>
+      <h4>Your account already verified Or verification code is invalid::</h4>
+      
+      <p><a th:href ="@{/login}">Login now..</a></p>
+    </div> 
+    
+    <div>&nbps;</div>
+    
+    <div  th:replace = "navigation :: footer_menu"></div>
+  </div>
+
+</body>
+</html>
